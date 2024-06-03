@@ -7,7 +7,7 @@ function App() {
   const addUser = (userObj) => {
     setUserList([...userList, userObj]);
   };
-  console.log(userList);
+  // console.log(userList);
   return (
     <div className="container pt-5">
       <h2 className="text-center">UserList</h2>
@@ -15,7 +15,7 @@ function App() {
       {/* Form Component */}
       <Form addUser={addUser} />
       {/* Table Component */}
-      <Table />
+      <Table userList={userList} />
     </div>
   );
 }
